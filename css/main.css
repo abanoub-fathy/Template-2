@@ -935,28 +935,28 @@ ul.bullets li.active {
   display: block;
   margin-bottom: 30px;
   font-size: 25px;
-  font-style: italic;
   letter-spacing: 2px;
   text-transform: capitalize;
+  position: relative;
 }
 
 .quote .container q::before {
   font-family: "Font Awesome 5 Free";
-  font-family: "Font Awesome 6 Free";
   font-weight: 900;
+  font-size: 30px;
   content: "\f10d";
-  position: relative;
-  top: -25px;
-  left: -15px;
+  top: -30px;
+  left: -5px;
+  position: absolute;
 }
 .quote .container q::after {
   font-family: "Font Awesome 5 Free";
-  font-family: "Font Awesome 6 Free";
   font-weight: 900;
+  font-size: 30px;
   content: "\f10e";
-  position: relative;
-  bottom: -5px;
-  right: -15px;
+  bottom: -30px;
+  right: -5px;
+  position: absolute;
 }
 
 .quote .container span {
@@ -964,3 +964,116 @@ ul.bullets li.active {
   font-size: 18px;
 }
 /* End Quote */
+
+/* Start Pricing */
+.pricing {
+  padding-top: var(--section-pading);
+  padding-bottom: var(--section-pading);
+}
+
+.pricing .prices-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  row-gap: 70px;
+  column-gap: calc(20% / 3);
+}
+
+.pricing .prices-container .box {
+  text-align: center;
+}
+
+@media (max-width: 767px) {
+  .pricing .prices-container .box {
+    flex-basis: 80%;
+  }
+}
+
+@media (min-width: 768px) {
+  .pricing .prices-container .box {
+    flex-basis: 40%;
+  }
+}
+
+@media (min-width: 992px) {
+  .pricing .prices-container .box {
+    flex-basis: 20%;
+  }
+}
+
+.pricing .prices-container .box .price .type {
+  text-transform: uppercase;
+  font-size: 17px;
+  color: #1f2021;
+  position: relative;
+  bottom: 5px;
+}
+
+.pricing .prices-container .box .price {
+  height: 150px;
+  border-top: 1px solid var(--main-color);
+  border-bottom: 1px solid var(--main-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.pricing .prices-container .box .price h2 {
+  position: relative;
+  font-size: 60px;
+  font-weight: 700;
+}
+
+.pricing .prices-container .box .price h2 > span:first-of-type {
+  font-size: 20px;
+  position: absolute;
+  left: -19px;
+  top: 0;
+  font-weight: 500;
+}
+
+.pricing .prices-container .box .price h2 > span:last-of-type {
+  position: absolute;
+  font-weight: 500;
+  font-size: 14px;
+  bottom: 0;
+  right: -35px;
+  color: #1f2021;
+}
+
+.pricing .prices-container .box .features {
+  border-bottom: 1px solid var(--main-color);
+  margin-bottom: 30px;
+}
+
+.pricing .prices-container .box .features > li {
+  width: fit-content;
+  margin: auto;
+  padding: 20px 30px;
+  text-transform: uppercase;
+  border-bottom: 1px solid var(--main-color);
+}
+
+.pricing .prices-container .box .features > li:last-child {
+  border-bottom: none;
+}
+
+.pricing .prices-container .box button {
+  border: 2px solid var(--main-color);
+  outline: none;
+  padding: 20px 30px;
+  background-color: #fff;
+  cursor: pointer;
+  transition: 0.4s;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -ms-transition: 0.4s;
+  -o-transition: 0.4s;
+}
+
+.pricing .prices-container .box button:hover {
+  background-color: var(--main-color);
+  color: #eee;
+}
+/* End Pricing */
