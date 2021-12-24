@@ -23,6 +23,7 @@ html {
 body {
   font-family: "Open Sans", sans-serif;
   height: 5000px;
+  color: #1f2021;
 }
 
 ul {
@@ -1075,5 +1076,26 @@ ul.bullets li.active {
 .pricing .prices-container .box button:hover {
   background-color: var(--main-color);
   color: #eee;
+}
+
+.pricing .contact {
+  text-align: center;
+  margin-top: 90px;
+}
+
+.pricing .contact h4 {
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.pricing .contact a {
+  text-decoration: none;
+  background-color: var(--main-color);
+  color: #eee;
+  padding: 20px 30px;
+  cursor: pointer;
+  display: block;
+  width: fit-content;
+  margin: 30px auto;
 }
 /* End Pricing */
