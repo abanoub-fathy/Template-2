@@ -1096,7 +1096,7 @@ ul.bullets li.active {
   cursor: pointer;
   display: block;
   width: fit-content;
-  margin: 30px auto;
+  margin: 30px auto 0;
 }
 /* End Pricing */
 
@@ -1163,6 +1163,7 @@ ul.bullets li.active {
 
 .subscribe .container form input[type="email"]::placeholder {
   color: #fff;
+  text-transform: uppercase;
 }
 
 .subscribe .container form input[type="submit"] {
@@ -1187,5 +1188,103 @@ ul.bullets li.active {
     margin: 40px 0 0;
     text-align: center;
   }
+
+  .subscribe .container form {
+    width: 100%;
+  }
 }
 /* End Subscribe */
+/* Start Contact */
+.contact-us {
+  padding-top: var(--section-pading);
+  padding-bottom: var(--section-pading);
+}
+
+.contact-us .content {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 767px) {
+  .contact-us .content {
+    flex-direction: column;
+  }
+}
+
+.contact-us .content form {
+  flex-basis: 70%;
+}
+
+.contact-us .content form .main-input {
+  padding: 20px;
+  display: block;
+  margin-bottom: 20px;
+  width: 100%;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+.contact-us .content form .main-input::placeholder {
+  text-transform: uppercase;
+}
+
+.contact-us .content form textarea {
+  height: 200px;
+  resize: none;
+}
+
+.contact-us .content input[type="submit"] {
+  background-color: var(--main-color);
+  color: #fff;
+  padding: 20px;
+  text-transform: uppercase;
+  border: none;
+  display: flex;
+  margin-left: auto;
+  cursor: pointer;
+}
+
+.contact-us .content .info {
+  flex-basis: 25%;
+}
+
+@media (max-width: 767px) {
+  .contact-us .content .info {
+    order: -1;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+}
+
+.contact-us .content .info h4 {
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+.contact-us .content span {
+  color: var(--light-font);
+}
+
+.contact-us .content .info .phone span {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.contact-us .content .info .address {
+  margin-top: 75px;
+}
+
+@media (max-width: 767px) {
+  .contact-us .content .info .address {
+    margin-top: 30px;
+  }
+}
+
+.contact-us .content .info .address address {
+  line-height: 1.8;
+  color: var(--light-font);
+}
+
+/* End Contact */
