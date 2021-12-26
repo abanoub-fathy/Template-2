@@ -1286,5 +1286,64 @@ ul.bullets li.active {
   line-height: 1.8;
   color: var(--light-font);
 }
-
 /* End Contact */
+
+/* Start Footer */
+footer {
+  padding-top: var(--section-pading);
+  padding-bottom: calc(var(--section-pading) / 2);
+  background-color: #121116;
+  color: #f2f2f2;
+  text-align: center;
+}
+
+footer img {
+  max-width: 100%;
+  margin-bottom: 20px;
+}
+
+footer h3 {
+  font-weight: normal;
+  text-transform: uppercase;
+  font-size: 20px;
+  padding: 20px;
+  border-bottom: 1px solid #f2f2f2;
+  margin: auto;
+  width: fit-content;
+}
+
+footer .social-icons {
+  margin-top: 20px;
+}
+
+footer .social-icons i {
+  margin-right: 10px;
+  font-size: 22px;
+  cursor: pointer;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+
+footer .social-icons i:hover {
+  color: var(--main-color);
+}
+
+footer p {
+  margin-top: 40px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+footer p span {
+  color: var(--main-color);
+}
+
+@media (max-width: 767px) {
+  footer p {
+    font-size: 3.2vmin;
+  }
+}
+/* End Footer */
